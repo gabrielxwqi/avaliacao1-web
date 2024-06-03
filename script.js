@@ -57,8 +57,19 @@ function somarNumero(){
     }
 }
 
-function somarNumero(){
-    var numero1 = document.getElementById("num20").value;
-    var numero1 = document.getElementById("num20").value;
-    var resultado = numero1 * numero2
+function somarNumeros(){
+    var numero20 = parseInt(document.getElementById("num20").value);
+    var numero21 = parseInt(document.getElementById("num21").value);
+    var resultado = numero20 * numero21
+    var teste = document.getElementById("resultadoRetangulo")
+    teste.innerHTML=resultado
+}
+
+function salario(){
+    var numero15 = parseInt(document.getElementById("num23").value)
+    var numero16 = parseInt(document.getElementById("num24").value)
+    var resultado = numero15*(numero16/100)+numero15
+    var teste = document.getElementById("resultadoSalario")
+    teste.innerHTML=resultado
+    alert("O resultado é: "+resultado)
 }
